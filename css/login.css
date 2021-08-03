@@ -1,0 +1,314 @@
+.login_top {
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.login_top .left {
+    width: 400px;
+}
+
+.login_top .left .logo {
+    height: 70px;
+    line-height: 70px;
+    float: left;
+}
+
+.login_top .left .logo img {
+    width: 170px;
+    height: 60px;
+    float: left;
+}
+
+.login_top .left span {
+    font-size: 24px;
+    margin-left: 20px;
+    float: left;
+    color: #5b5b5b;
+}
+
+.login_top .right {
+    width: 200px;
+    margin-top: -25px;
+    padding-left: 25px;
+    background: url(../images/login/q-icon.png) no-repeat left 5px;
+}
+
+.login_top .right a {
+    color: #999;
+    font-size: 12px;
+}
+
+.login_top .right a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+/* 提示语 */
+.caution {
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff8f0;
+}
+
+.caution p {
+    font-family: '宋体';
+    width: 800px;
+    margin: 0 auto;
+    font-size: 8px;
+    color: #999;
+}
+
+.content {
+    background-color: #e73710;
+}
+
+/* 右边的登录框 */
+.middle {
+    width: 1000px;
+    margin: 0 auto;
+    height: 475px;
+    background: url(../images/login/ba9159fdc8d24656.jpg);
+}
+
+.middle .enroll {
+    width: 346px;
+    height: 440px;
+    border: solid #ddd 2px;
+    float: right;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.middle .enroll .point {
+    height: 39px;
+    line-height: 39px;
+    background-color: #fff8f0;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+}
+
+.qr_code_login {
+    overflow: hidden;
+}
+
+.qr_code_head {
+    width: 100%;
+    height: 55px;
+}
+
+.head_left,
+.head_right {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #999;
+    height: 55px;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+.head_left {
+    color: #f01;
+}
+
+.head_right:hover {
+    color: #f01;
+}
+
+.main {
+    height: 250px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .left_pic,
+.main .qr_code_right {
+    float: left;
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+}
+
+.main .left_pic img:first-child {
+    border: solid #f4f4f4 1px;
+    padding: 6px;
+}
+
+.main .qr_code_right {
+    padding: 20px 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.main .left_pic img {
+    width: 155px;
+    height: 150px;
+}
+
+.main .show_pic {
+    display: none;
+}
+
+.main .username,
+.main .passworld {
+    height: 40px;
+}
+
+.main .username input,
+.main .passworld input {
+    height: 40px;
+    float: left;
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    outline: none;
+    border: solid #bdbdbd 1px;
+    border-left: none;
+    padding-left: 10px;
+}
+
+.main .user_img,
+.main .pwd_img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/login/pwd-icons-new.png) no-repeat;
+    border: solid #bdbdbd 1px;
+}
+
+.main .user_img img,
+.main .pwd_img img {
+    width: 200px;
+    height: 200px;
+}
+
+.forget {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.scan_text {
+    color: #999;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* 登录按钮 */
+.login_btn {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f02;
+    border: none;
+}
+
+/* 登录方式 */
+.coagent ul:first-child {
+    height: 30px;
+    line-height: 30px;
+   display: flex;
+   justify-content: center;
+   margin: 10px 0;
+}
+
+.coagent ul:first-child li {
+    margin-left: 14px;
+    font-size: 14px;
+}
+
+.coagent ul:nth-child(2) {
+    padding-top: 5px;
+}
+
+.coagent ul:nth-child(2) li {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.coagent ul:first-child li b,
+.coagent ul:nth-child(2) li b {
+    display: inline-block;
+    width: 28px;
+    height: 30px;
+    margin-right: 3px;
+}
+
+.coagent ul:first-child li:nth-child(1) b {
+    background: url(../images/login/qr-coagent.png) no-repeat;
+    background-position: 0 2px;
+}
+
+.coagent ul:first-child li:nth-child(2) b {
+    background: url(../images/login/qr-coagent.png) no-repeat;
+    background-position: -26px 2px;
+}
+
+.coagent ul:first-child li:nth-child(3) b {
+    background: url(../images/login/qr-coagent.png) no-repeat;
+    background-position: -53px 2px;
+}
+
+.coagent ul:nth-child(2) li:first-child b {
+    width: 20px;
+    background: url(../images/login/QQ-weixin.png) no-repeat;
+}
+
+.coagent ul:nth-child(2) li:nth-child(2) b {
+    width: 20px;
+    background: url(../images/login/QQ-weixin.png) no-repeat;
+    background-position: -20px 0;
+}
+
+.coagent ul:nth-child(2) li:nth-child(3) b {
+    width: 20px;
+    background: url(../images/login/pwd-icons-new.png) no-repeat;
+    background-position: -103px -72px;
+}
+
+.coagent ul:nth-child(2) li:nth-child(1) .line {
+    margin-left: 10px;
+    color: #ccc;
+}
+
+/* 底部 */
+.footer .footer_center {
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 70px;
+    margin-top: 15px;
+}
+
+.footer .footer_center ul li {
+    float: left;
+    width: calc(100% / 11);
+    box-sizing: border-box;
+}
+
+.footer .footer_center ul li a {
+    font-family: '宋体';
+    font-size: 12px;
+    color: #666666;
+}
+
+
+.footer .footer_center ul li a:hover {
+    text-decoration: underline;
+    color: #f00;
+}
+
+.footer .footer_center ul li a span {
+    margin-left: 7px;
+}
+
+.footer .copy {
+    font-size: 12px;
+    text-align: center;
+    color: #666666;
+    height: 40px;
+    line-height: 40px;
+}

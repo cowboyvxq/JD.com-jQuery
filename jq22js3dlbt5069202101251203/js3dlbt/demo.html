@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../js3dlbt/css/demo.css">
+    <script src="../js3dlbt/js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <ul class="clearfix box">
+            <li class="active">
+                <a href="">
+                    <img src="../js3dlbt/images/t4.png" alt="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../js3dlbt/images/t1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../js3dlbt/images/t2.png" alt="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../js3dlbt/images/t3.png" alt="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../js3dlbt/images/t4.png" alt="">
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../js3dlbt/images/t4.png" alt="">
+                </a>
+            </li>
+        </ul>
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+    </div>
+
+    <script>
+        var timer = null;
+        var step = 0;
+        var w = $('.box>li').width();
+         function autoPlay() {
+           timer = setInterval(() => {
+            //    step++;
+            //    if(step >= 4) step = 1;
+            //    $('.box>li').eq(step).addClass('active').siblings().removeClass('active');
+            //    console.log(3);
+            //     $('.box').animate({
+            //         marginLeft:-w * step
+            //     }) 
+            $('.next').click();
+
+             }, 3000);
+         }
+         autoPlay()
+
+         $('.prev').click(function() {
+            clearInterval(timer);
+                 step--;
+                 if(step === -1) {
+                     step = 4;
+                 }
+               $('.box>li').eq(step).addClass('active').siblings().removeClass('active');
+
+                 $('.box').animate({
+                    marginLeft:-w * step
+                }) 
+                 autoPlay();
+         })
+
+         $('.next').click(function() {
+            clearInterval(timer);
+                 step++;
+                 if(step === 4) {
+                     step = 0;
+                 }
+               $('.box>li').eq(step).addClass('active').siblings().removeClass('active');
+
+                 $('.box').animate({
+                    marginLeft:-w * step
+                }) 
+                 autoPlay();
+         })
+
+    </script>
+</body>
+
+</html>
